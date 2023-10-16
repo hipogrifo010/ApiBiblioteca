@@ -43,18 +43,10 @@ Inicie la aplicación con npm start.
 Uso
 Descripción detallada de los endpoints y operaciones disponibles, incluyendo ejemplos de cómo realizar solicitudes a la API y utilizar la interfaz gráfica.
 
-Contribución
-Las contribuciones son lo que hacen a la comunidad de código abierto un lugar increíble para aprender, inspirar y crear. Cualquier contribución que haga es grandemente apreciada.
-
-Bifurque el Proyecto
-Cree su Feature Branch (git checkout -b feature/AmazingFeature)
-Haga commit a sus Cambios (git commit -m 'Add some AmazingFeature')
-Push al Branch (git push origin feature/AmazingFeature)
-Abra un Pull Request
 Licencia
 Distribuido bajo la Licencia MIT. Ver LICENSE para más información.
 
 Contacto
-Nombre de Contacto - @twitter_handle - email
+Nombre de Contacto - darioubramirez@gmail.com
 
-Enlace del Proyecto: https://github.com/your_username/repo_name
+Enlace del Proyecto: https://github.com/hipogrifo010/ApiBiblioteca
