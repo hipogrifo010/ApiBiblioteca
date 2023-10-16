@@ -1,0 +1,92 @@
+/* Contenedor principal para los libros, establece la presentación, espaciado y alineación de las tarjetas de libros */
+.libros-container {
+  max-width: 1600px; /* Define la anchura máxima del contenedor de libros */
+  height: auto; /* Permite que el contenedor se ajuste automáticamente a la altura del contenido */
+  margin: auto; /* Centra el contenedor en la ventana */
+  padding: 20px 50px; /* Añade relleno en el interior del contenedor, más en los lados para evitar que el contenido toque los bordes */
+  display: flex; /* Utiliza un diseño flexible para manejar el diseño de las tarjetas de libros */
+  flex-wrap: wrap; /* Permite que los elementos del contenedor se ajusten en líneas múltiples */
+  gap: 20px; /* Espacio entre las tarjetas de libros */
+  justify-content: center; /* Centra las tarjetas de libros en el contenedor en lugar de distribuirlas uniformemente */
+}
+
+/* Estilo para cada tarjeta de libro individual, incluyendo sombra, relleno y bordes redondeados */
+.libro-card-container {
+  background-color: white; /* Color de fondo blanco para la tarjeta */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra sutil para la tarjeta */
+  padding: 20px; /* Relleno interno alrededor del contenido de la tarjeta */
+  display: flex; /* Utiliza un diseño flexible para el contenido de la tarjeta */
+  border-radius: 8px; /* Bordes redondeados de la tarjeta */
+  gap: 10px; /* Espacio entre elementos dentro de la tarjeta */
+  width: calc(
+    100% - 40px
+  ); /* Anchura ajustada para tener en cuenta el espacio y el relleno */
+  margin-bottom: 20px; /* Espacio debajo de la tarjeta para separarla de otras tarjetas o contenido */
+}
+
+/* Estilo para las columnas dentro de las tarjetas de libros, si se utilizan para diseño */
+.columna {
+  max-width: 800px; /* Ancho máximo para cada columna */
+  flex: 1; /* Permite que la columna ocupe el espacio disponible */
+  display: flex; /* Establece un diseño flexible para el contenido dentro de la columna */
+  flex-direction: column; /* Organiza el contenido de la columna en un diseño vertical */
+  gap: 10px; /* Añade espacio entre las tarjetas dentro de la columna */
+}
+
+/* Estilo básico para las tarjetas, que puede aplicarse a varios elementos */
+.card {
+  padding: 10px; /* Relleno interno alrededor del contenido de la tarjeta */
+  border-radius: 8px; /* Bordes redondeados de la tarjeta */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil debajo de la tarjeta */
+  transition: all 0.3s ease; /* Transición suave de todas las propiedades animables */
+}
+
+/* Efecto hover para las tarjetas, aumenta la sombra */
+.card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra más profunda al pasar el cursor */
+}
+
+/* Estilo para la imagen dentro de las tarjetas de libros */
+.imagen-card {
+  flex: 0 1 auto; /* No permite que la imagen crezca pero sí que se reduzca, y que se base en su contenido */
+  width: 25%; /* Anchura del contenedor de la imagen, como porcentaje del contenedor padre */
+}
+
+/* Estilo para los detalles dentro de las tarjetas de libros */
+.detalles-card {
+  flex: 1; /* Permite que el contenedor de detalles ocupe el espacio restante */
+  background-color: #e7e7e7b8; /* Color de fondo semitransparente para el contenedor de detalles */
+  display: flex; /* Utiliza un diseño flexible para los detalles */
+  flex-direction: column; /* Organiza los detalles en un diseño vertical */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos de los detalles */
+}
+
+/* Ajustes para la imagen dentro de la tarjeta de imagen */
+.imagen-card img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto original de la imagen */
+  border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilo para el botón, con sombra, color y estilo de texto */
+.boton {
+  background-color: #4caf50; /* Color de fondo verde para el botón */
+  border: none; /* Sin borde para el botón */
+  color: white; /* Texto blanco para el botón */
+  padding: 15px 32px; /* Relleno alrededor del texto del botón */
+  box-shadow: 1px 2px 4px #000000c5; /* Sombra debajo del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  text-decoration: none; /* Elimina cualquier decoración de texto (como subrayado) */
+  display: inline-block; /* El botón se comporta como un elemento en línea pero acepta propiedades de bloque */
+  font-size: 16px; /* Tamaño de la fuente del texto del botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  margin: 4px 2px; /* Margen alrededor del botón */
+  transition-duration: 0.4s; /* Duración de la animación al pasar el cursor */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+}
+
+/* Efecto hover para el botón, cambia el color de fondo y el texto */
+.boton:hover {
+  background-color: #011c02; /* Color de fondo oscuro para el botón al pasar el cursor */
+  color: white; /* Mantiene el texto blanco al pasar el cursor */
+}

@@ -1,0 +1,150 @@
+/* Estilos aplicables al elemento con la clase .App y al elemento body, configurando el fondo y otros estilos generales */
+.App,
+body {
+  height: 100vh; /* Asegura que estos elementos ocupen toda la altura de la pantalla */
+  background-image: url('../public/Images/FondoCrud.jpg'); /* Establece una imagen de fondo */
+  background-size: cover; /* Hace que la imagen de fondo cubra completamente el área del elemento */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center center; /* Centra la imagen de fondo */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  display: flex; /* Aplica un modelo de caja flexible */
+}
+/* Estilos para el contenedor del contenido principal */
+.content {
+  flex-grow: 1; /* Permite que el elemento crezca y ocupe el espacio disponible */
+}
+
+/* Estilos para el pie de página */
+.footer {
+  position: fixed; /* Posiciona el pie de página en la parte inferior de la ventana de visualización */
+  bottom: 0; /* Alinea el pie de página con la parte inferior del elemento contenedor */
+  width: 100%; /* Hace que el pie de página ocupe todo el ancho del contenedor */
+  /* Otros estilos deben ser agregados aquí según sea necesario */
+}
+
+/* Estilos específicos para la página de inicio */
+.home-page {
+  height: 100%; /* Asegura que la página de inicio ocupe toda la altura del contenedor */
+  overflow: hidden; /* Evita que la página de inicio tenga barras de desplazamiento */
+}
+/* Estilos generales para varios elementos, asegurando la consistencia en la altura y eliminando márgenes */
+html,
+body,
+#root,
+.App {
+  height: 100%; /* Asegura que estos elementos tengan una altura del 100% */
+  margin: 0; /* Elimina cualquier margen predeterminado */
+}
+
+/* Estilos para el logo dentro de la aplicación */
+.App-logo {
+  height: 40vmin; /* Establece la altura del logo en relación con la altura/anchura del puerto de visualización */
+  pointer-events: none; /* Asegura que el logo no interfiera con los eventos del cursor */
+}
+
+/* Reglas de animación para el logo de la aplicación */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Aplica una animación giratoria al logo */
+  }
+}
+
+/* Estilos para el encabezado de la aplicación */
+.App-header {
+  background-color: #262729; /* Color de fondo oscuro para el encabezado */
+  min-height: 50px; /* Altura mínima para el encabezado */
+  display: 20%; /* Esto parece ser un error, 'display' no acepta valores de porcentaje */
+  flex-direction: column; /* Organiza los elementos del encabezado en una columna */
+  align-items: left; /* Alinea los elementos del encabezado a la izquierda */
+  justify-content: left; /* Justifica el contenido a la izquierda; puede que no funcione como se espera sin 'display: flex' */
+  font-size: calc(
+    10px + 2vmin
+  ); /* Tamaño de fuente adaptable basado en el tamaño de la ventana de visualización */
+  color: white; /* Color de texto blanco para el encabezado */
+}
+/* Estilos para el cuerpo principal de la aplicación */
+.App-body {
+  background-color: #d0d5dc; /* Color de fondo claro para el cuerpo de la aplicación */
+  min-height: 100vh; /* Asegura que el cuerpo de la aplicación ocupe al menos toda la altura de la ventana de visualización */
+  display: flex; /* Aplica un modelo de caja flexible */
+  flex-direction: column; /* Organiza el contenido en una columna */
+  align-items: left; /* Alinea los elementos a la izquierda */
+  justify-content: left; /* Justifica el contenido a la izquierda */
+  font-size: calc(
+    10px + 2vmin
+  ); /* Tamaño de fuente adaptable basado en el tamaño de la ventana de visualización */
+  color: rgba(
+    21,
+    21,
+    21,
+    0.898
+  ); /* Color de texto casi negro con transparencia */
+}
+.App-link {
+  color: #61dafb;
+}
+/* Estilos para la lista de navegación */
+.nav-list {
+  padding: 0; /* Elimina el relleno predeterminado */
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+  margin: 10px 0; /* Añade un margen arriba y abajo de cada elemento de la lista */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+  padding: 10px 15px; /* Añade relleno alrededor de los enlaces */
+  text-decoration: none; /* Elimina la decoración subrayada de los enlaces */
+  color: black; /* Establece el color del texto de los enlaces en negro */
+  border-radius: 5px; /* Redondea las esquinas de los enlaces */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza los cambios de color de fondo y de texto */
+}
+
+/* Estilos para los enlaces de navegación cuando se sitúa sobre ellos el cursor */
+.nav-link:hover {
+  background-color: #ddd; /* Cambia el color de fondo a un gris claro cuando se pasa el cursor */
+  color: #333; /* Cambia el color del texto a un gris oscuro cuando se pasa el cursor */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar clickeabilidad */
+}
+
+/* Estilos para el contenedor de la navegación */
+.nav-container {
+  display: flex; /* Aplica un modelo de caja flexible */
+  justify-content: space-evenly; /* Distribuye el espacio de manera uniforme entre los enlaces */
+  align-items: center; /* Centra los enlaces verticalmente */
+  padding: 10px; /* Añade relleno alrededor del contenedor */
+  background-color: #f4f4f4; /* Establece un color de fondo gris claro */
+}
+
+/* Estilos para el contenedor del contenido */
+.content-container {
+  display: flex; /* Aplica un modelo de caja flexible */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 20px; /* Añade relleno alrededor del contenedor */
+}
+
+/* Estilos para la tabla de libros */
+.tabla-libros {
+  width: 100%; /* Hace que la tabla ocupe el ancho completo del contenedor */
+  max-width: 1000px; /* Establece un ancho máximo para la tabla */
+  margin: auto; /* Centra la tabla horizontalmente */
+  border-spacing: 0; /* Elimina el espacio entre las celdas de la tabla */
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+  display: flex; /* Aplica un modelo de caja flexible */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura completa de la ventana de visualización */
+}
+
+/* Estilos para los botones */
+.boton {
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que el elemento es clickeable */
+  margin-left: 5px; /* Añade un pequeño margen a la izquierda de cada botón */
+}

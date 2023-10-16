@@ -1,0 +1,115 @@
+.card {
+  overflow: hidden; /* Asegura que el contenido no desborde los bordes de la tarjeta. */
+  border: 1px solid #e0e0e0; /* Borde de color gris claro alrededor de la tarjeta. */
+  border-radius: 10px; /* Bordes redondeados de la tarjeta. */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra sutil debajo de la tarjeta. */
+  padding: 20px; /* Espaciado interno alrededor del contenido de la tarjeta. */
+  margin: 20px; /* Espaciado externo alrededor de la tarjeta. */
+  background-color: white; /* Color de fondo blanco para la tarjeta. */
+  max-width: 500px; /* Ancho máximo de la tarjeta. */
+  margin: auto; /* Centra la tarjeta horizontalmente. */
+}
+
+/* Estilo para las tarjetas de búsqueda. Controla el ancho máximo. */
+.busqueda-card {
+  max-width: 250px; /* Define un ancho máximo para las tarjetas de búsqueda. */
+  margin: 0 auto; /* Centra la tarjeta de búsqueda horizontalmente. */
+}
+
+/* Estilo para el contenedor de creación de libros. Incluye sombras, relleno y bordes redondeados. */
+.crear-libro-container {
+  max-width: 400px; /* Ancho máximo para el contenedor. */
+  margin: 0 auto; /* Centra el contenedor horizontalmente. */
+  padding: 20px; /* Espaciado interno alrededor del contenido del contenedor. */
+  background-color: white; /* Fondo blanco para el contenedor. */
+  border-radius: 5px; /* Bordes redondeados para el contenedor. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del contenedor. */
+}
+
+/* Estilos para el formulario de libros, organiza los campos en una estructura vertical. */
+.libro-form {
+  display: flex; /* Utiliza flexbox para el diseño. */
+  flex-direction: column; /* Organiza los hijos del formulario en una columna. */
+}
+/* Estilo para los controles del formulario, como campos de entrada y etiquetas. */
+.form-control {
+  margin-bottom: 20px; /* Espacio en la parte inferior de los controles del formulario para separación. */
+}
+
+.form-control label {
+  display: block; /* Hace que la etiqueta ocupe toda la línea. */
+  margin-bottom: 8px; /* Espacio entre la etiqueta y el campo de entrada. */
+}
+
+.form-control input {
+  width: 95%; /* El campo de entrada ocupa el 95% del ancho de su contenedor padre. */
+  padding: 10px; /* Relleno dentro de los campos de entrada. */
+  border-radius: 5px; /* Bordes redondeados para los campos de entrada. */
+  border: 1px solid #ddd; /* Borde alrededor de los campos de entrada. */
+  font-size: 16px; /* Tamaño de fuente para el texto dentro de los campos de entrada. */
+}
+
+/* Estilo para el botón de envío del formulario. */
+.submit-btn {
+  background-color: #5cb85c; /* Color de fondo verde para el botón. */
+  color: white; /* Color de fuente blanco para el texto del botón. */
+  border: none; /* Elimina el borde del botón. */
+  border-radius: 5px; /* Bordes redondeados para el botón. */
+  padding: 10px 20px; /* Relleno alrededor del texto del botón. */
+  font-size: 18px; /* Tamaño de la fuente para el texto del botón. */
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón. */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo en hover. */
+}
+
+.submit-btn:hover {
+  background-color: #4cae4c; /* Oscurece el color de fondo del botón cuando se pasa el cursor. */
+}
+
+/* Estilo para un contenedor externo que puede contener varias tarjetas o elementos. */
+.outer-container {
+  overflow: hidden; /* Evita que el contenido interior desborde el contenedor. */
+  display: flex; /* Utiliza flexbox para el diseño, lo que permite una mejor alineación de los elementos internos. */
+  width: 15%; /* Ancho definido para el contenedor. */
+  justify-content: center; /* Centra los elementos hijos horizontalmente en el contenedor. */
+  align-items: center; /* Centra los elementos hijos verticalmente en el contenedor. */
+  padding: 20px; /* Espaciado interno alrededor de los bordes del contenedor. */
+  background-color: #f4f4f4; /* Color de fondo claro para el contenedor. */
+  border-radius: 5px; /* Bordes redondeados para el contenedor. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del contenedor. */
+  margin: 20px; /* Espaciado externo alrededor del contenedor. */
+} /* Estilo principal para el contenedor general que probablemente envuelva todo el contenido de la página. */
+.main-container {
+  overflow: hidden; /* Previene el desbordamiento de contenido. */
+  padding: 20px; /* Espaciado interno alrededor de los bordes del contenedor. */
+  align-items: center; /* Alinea los elementos hijos en el centro a lo largo del eje transversal. */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana de visualización. */ /* Color de fondo específico para el contenedor. */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinear contenedores secundarios al inicio (izquierda) */
+}
+/* Estilo específico para el contenedor de búsqueda dentro del contenedor principal. */
+.main-container-search {
+  position: relative; /* Establecido para posicionamiento en relación con su posición normal. */
+  display: flex; /* Utiliza flexbox para un diseño flexible. */
+  flex-direction: row; /* Organiza los elementos hijos en una fila. */
+}
+
+/* Estilo para el contenedor de búsqueda, que puede contener un campo de búsqueda y posiblemente botones u otros controles. */
+.busqueda-container {
+  left: 500px; /* Desplaza el contenedor de búsqueda 500px a la derecha de su posición inicial. */
+  overflow-y: hidden; /* Previene el desbordamiento de contenido vertical. */
+  height: 50%; /* Define una altura específica para el contenedor de búsqueda. */
+  margin-bottom: 20px; /* Añade espacio en la parte inferior del contenedor de búsqueda. */
+  width: 100%; /* El contenedor de búsqueda utiliza el ancho completo disponible. */
+}
+
+/* Estilo para el contenedor de resultados, que mostrará los resultados de la búsqueda. */
+.resultados-container {
+  width: 50%; /* El contenedor de resultados ocupa el 50% del ancho total disponible. */
+  max-height: calc(
+    100vh - 200px
+  ); /* La altura máxima se calcula basándose en la altura de la ventana de visualización menos 200px. */
+}
